@@ -2,6 +2,7 @@ let input = document.getElementById("inputBox");
 let buttons = document.querySelectorAll("button");
 
 let string = "";
+let temp = "";
 let arr = Array.from(buttons);
 
 arr.forEach((button) => {
@@ -10,15 +11,29 @@ arr.forEach((button) => {
       string = eval(string);
       input.value = string;
       string = string.toString();
+      temp = string;
     } else if (e.target.innerHTML == "AC") {
       string = "";
+      temp = "";
       input.value = "0";
     } else if (e.target.innerHTML == "DEL") {
-      string = string.substring(0, string.length() - 1);
-    }
-    else{
-        string = string.concat(e.target.innerHTML);
-        input.value = string;
+      string = string.slice(0, string.length - 1);
+      temp = temp.slice(0, temp.length - 1);
+      input.value = temp;
+    } else if (
+      e.target.innerHTML == "+" ||
+      e.target.innerHTML == "-" ||
+      e.target.innerHTML == "/" ||
+      e.target.innerHTML == "*" ||
+      e.target.innerHTML == "%"
+    ) {
+      string = string.concat(e.target.innerHTML);
+      temp = "";
+      input.value = e.target.innerHTML;
+    } else {
+      string = string.concat(e.target.innerHTML);
+      temp = temp.concat(e.target.innerHTML);
+      input.value = temp;
     }
   });
 });

@@ -57,11 +57,25 @@ button{
   cursor: pointer;
 }
 
+button:active{
+  background-color: #fff;
+  color: #000;
+}
+
 .equalsBtn{
   background-color: #fb7c14;
 }
 
+.equalsBtn:active{
+  background-color: aliceblue;
+  color: #fb7c14;
+}
+
 .operator{
   color: #6dee0a;
+}
+
+.operator:active{
+  background-color: azure;
 }
 
