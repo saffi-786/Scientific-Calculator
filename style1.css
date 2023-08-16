@@ -1,27 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 body {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   user-select: none;
   background: #ecf0f3;
 }
 
 .container {
-  width: 31%;
+  width: 45%;
   height: 50vh;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 12px 12px 20px #cbcde1, -12px -12px 20px #ffffff;
 }
 
 .display #screen {
-  width: 95%;
+  width: 97%;
   height: 70px;
   font-size: 35px;
   border: none;
@@ -47,7 +45,7 @@ body {
 }
 
 .btns .row button {
-  width: 82px;
+  width: 80px;
   height: 35px;
   font-size: 16px;
   border: none;
@@ -93,25 +91,25 @@ body {
 }
 
 .redirect {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5px;
-  margin-top: 20px;
-  padding: 10px 15px;
-  border-radius: 25px;
-  box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;
+  }
 
-.redirect a{
+.redirect a {
   text-decoration: none;
-  color: #e60073;
-  font-family: 'Poppins', sans-serif;
+  color: #33ccff;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.redirect img{
+.redirect img {
   width: 20px;
   height: 20px;
 }

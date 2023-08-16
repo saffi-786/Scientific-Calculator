@@ -1,5 +1,6 @@
-let input = document.getElementById("inputBox");
-let buttons = document.querySelectorAll("button");
+let input = document.getElementById("screen");
+let buttons = document.querySelectorAll(".btn");
+const tap = new Audio('right.mp3');
 
 let string = "";
 let temp = "";
@@ -8,6 +9,7 @@ let arr = Array.from(buttons);
 arr.forEach((button) => {
   button.addEventListener("click", (e) => {
     if (e.target.innerHTML == "=") {
+      tap.play();
       string = eval(string);
       input.value = string;
       string = string.toString();
@@ -16,7 +18,7 @@ arr.forEach((button) => {
       string = "";
       temp = "";
       input.value = "0";
-    } else if (e.target.innerHTML == "DEL") {
+    } else if (e.target.innerHTML == "CE") {
       string = string.slice(0, string.length - 1);
       temp = temp.slice(0, temp.length - 1);
       input.value = temp;
