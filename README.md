@@ -1,4 +1,4 @@
-# Simple-Calculator
+# Scientific-Calculator
 <a href="https://singular-yeot-222b53.netlify.app/">Preview Here</a>
 
 <h1>A Calculator Web-App with both Basic and Scientific Modes.</h1>
